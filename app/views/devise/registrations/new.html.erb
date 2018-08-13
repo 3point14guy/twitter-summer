@@ -24,6 +24,11 @@
   </div>
 
   <div class="field">
+    <strong>Upload profile pic</strong><br>
+    <%= f.file_field :avatar %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autocomplete: "email" %>
   </div>

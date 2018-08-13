@@ -9,13 +9,18 @@
   </div>
 
   <div class="field">
-    <%= f.label :username %><br />
+    <%= f.label :username, "Username" %><br />
     <%= f.text_field :username, autocomplete: "username" %>
   </div>
 
   <div class="field">
     <%= f.label :bio %><br />
     <%= f.text_field :bio, autocomplete: "bio" %>
+  </div>
+
+  <div class="field">
+    <strong>Upload profile pic</strong><br>
+    <%= f.file_field :avatar %>
   </div>
 
   <div class="field">
@@ -33,7 +38,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :password, "CHANGE PASSWORD" %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "off" %>
     <% if @minimum_password_length %>
       <br />
